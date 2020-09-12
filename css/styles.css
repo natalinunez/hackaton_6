@@ -15,14 +15,15 @@ a{
 
 .Container{    
     width: 1343px;
-    height: 1017px;
-    /*background-color:green;*/
+    /*height: 1017px;*/
+    height: 2000px;
+    background-color:green;
 }
 
 /*Inicio Container Head*/
 .ContainerHead{
     width: 100%;
-    height: 5%;
+    height: 3%;
     /*background-color:pink;*/
     display: flex;   
     justify-content: space-between;
@@ -57,7 +58,7 @@ a{
 /*Inicio Container Main*/
 .ContainerMain{
     width: 100%;
-    height: 20%;    
+    height: 8%;    
     background-image: url('./imagenes/banner.png');
     display: flex;
     flex-direction: column;
@@ -86,9 +87,11 @@ a{
 /*Fin Container Main*/
 /*Inicio Container Popular*/
 .ContainerPopular{
+    background-color:blue;
     width: 70%;
-    height: 20%;    
+    height: 25%;    
     margin:0 auto;
+
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr,3fr,1fr);
@@ -137,7 +140,7 @@ a{
     align-items: center;    
 }
 .CPopularAuthor-Link{
-    width: 15%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -149,6 +152,68 @@ a{
     font-weight: bold;       
 }
 .CPopularAuthor--Date{
+    font-weight: 100;
+}
+/*Fin Container Popular*/
+
+/*Inicio Container List Popular*/
+.ContainerListPopular{
+    background-color:pink;
+    width: 70%;
+    height: 25%;    
+    margin:0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap:15px;
+}
+
+.CLP-H2{
+    font-size: 18px;
+    color:black;
+    font-weight: bold;    
+}
+
+.CLP--Size{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ContainerListPopular .CLP_1 .CLP_2 .CLP_3{
+    grid-column: 1/2;
+    grid-row: 1/1;
+    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr,3fr,1fr);
+   /* grid-gap:30px;*/
+}
+
+/*.CLP .CLP-Imagen .CLP-H2 .CLP-P .CLPAuthor{
+    grid-column: 1/2;
+    grid-row: 1/5;
+}*/
+
+.CLPAuthor{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.CLPAuthor-Link{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.CLPAuthor-Name{
+    font-size: 15px;
+    color:black;
+    font-weight: bold;       
+}
+.CLPAuthor--Date{
     font-weight: 100;
 }
 /*Fin Container Popular*/
