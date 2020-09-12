@@ -216,4 +216,66 @@ a{
 .CLPAuthor--Date{
     font-weight: 100;
 }
-/*Fin Container Popular*/
+/*Fin Container List Popular*/
+
+/*Inicio Container All Articles*/
+.ContainerAllArticles{
+    background-color:skyblue;
+    width: 70%;
+    height: 50%;    
+    margin:0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr,3fr);
+    grid-template-rows: repeat(5,1fr);
+    /*grid-gap:15px;*/
+}
+.CAA-TitleTexto{
+    font-size: 18px;
+    color:black;
+    font-weight: bold;        
+}
+.CAA--Space{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ContainerAllArticles .CAA-Imagen{
+    grid-column: 1/2;
+    grid-row: 1/2;    
+}
+.ContainerAllArticles .CAA-TextoLink{
+    grid-column: 2/3;
+    grid-row: 1/2;  
+}
+
+.CAA_1, .CAA_2,.CAA_3, .CAA_4, .CAA_5 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr,4fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap:15px;
+}
+
+.CAAAuthor{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.CAAAuthor-Link{
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.CAAAuthor-Name{
+    font-size: 15px;
+    color:black;
+    font-weight: bold;       
+}
+.CAAAuthor--Date{
+    font-weight: 100;
+}
+
+/*Fin Container All Articles*/
