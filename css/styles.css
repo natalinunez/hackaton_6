@@ -54,3 +54,32 @@ a{
     transition: 1s all;
 }
 /*Fin Container Head*/
+/*Inicio Container Main*/
+.ContainerMain{
+    width: 100%;
+    height: 20%;    
+    background-image: url('./imagenes/banner.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerMain-Title{
+    font-size: 15px;
+    color:black;
+    font-weight: bold;    
+}
+.ContainerMain-Title--Color{
+    font-size: 30px;
+    color:white;    
+}
+
+.ContainerMain-P{
+    font-size: 15px;
+    color:black;
+}
+.ContainerMain-P--Color{
+    color:white;
+}
+/*Fin Container Main*/
